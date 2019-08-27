@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8a726d1-5af7-42bc-bbc2-92f7ca68f90d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/1759_암호 만들기.py" beforeDir="false" afterPath="$PROJECT_DIR$/1759_암호 만들기.py" afterDir="false" />
-    </list>
+    <list default="true" id="c8a726d1-5af7-42bc-bbc2-92f7ca68f90d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,26 +21,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="12" />
-          <entry key="txt" value="5" />
+          <entry key="py" value="13" />
+          <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="12" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Python" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="634" />
-          <entry key="txt" value="21" />
+          <entry key="py" value="1130" />
+          <entry key="txt" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="634" />
+          <entry key="PLAIN_TEXT" value="51" />
+          <entry key="Python" value="1130" />
         </counts>
       </usages-collector>
     </session>
@@ -67,11 +65,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1759_암호 만들기.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="228">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1697_숨바꼭질.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              <folding>
+                <marker date="1566895187971" expanded="true" signature="72:641" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1697_input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -108,6 +127,8 @@
         <option value="$PROJECT_DIR$/2309_일곱 난쟁이.py" />
         <option value="$PROJECT_DIR$/1759_input.txt" />
         <option value="$PROJECT_DIR$/1759_암호 만들기.py" />
+        <option value="$PROJECT_DIR$/1697_숨바꼭질.py" />
+        <option value="$PROJECT_DIR$/1697_input.txt" />
       </list>
     </option>
   </component>
@@ -118,7 +139,9 @@
     <option name="height" value="1030" />
   </component>
   <component name="ProjectId" id="1PlVECfLV7BJDBX8sWAhmdmwIEg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -155,7 +178,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.1759_암호 만들기">
+  <component name="RunManager" selected="Python.1697_숨바꼭질">
     <configuration name="미로탈출 로봇중간 단계" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algo 보충" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -177,27 +200,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="바이러스" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="algo 보충" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../노승만/Algorithm/김은경강사님 솔루션/AD_4day_솔루션_김은경" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../노승만/Algorithm/김은경강사님 솔루션/AD_4day_솔루션_김은경/바이러스.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="121241241" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algo 보충" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -211,6 +213,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/121241241.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="1697_숨바꼭질" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="algo 보충" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1697_숨바꼭질.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -284,18 +307,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.2206_벽 부수고 이동하기" />
-      <item itemvalue="Python.바이러스" />
       <item itemvalue="Python.미로탈출 로봇중간 단계" />
       <item itemvalue="Python.121241241" />
       <item itemvalue="Python.1759_암호 만들기" />
+      <item itemvalue="Python.1697_숨바꼭질" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.1697_숨바꼭질" />
         <item itemvalue="Python.1759_암호 만들기" />
         <item itemvalue="Python.121241241" />
         <item itemvalue="Python.2206_벽 부수고 이동하기" />
         <item itemvalue="Python.미로탈출 로봇중간 단계" />
-        <item itemvalue="Python.바이러스" />
       </list>
     </recent_temporary>
   </component>
@@ -452,8 +475,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1759_암호 만들기.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="22" />
+        <state relative-caret-position="228">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1697_숨바꼭질.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <marker date="1566895187971" expanded="true" signature="72:641" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1697_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>

@@ -16,7 +16,7 @@ def comb(n, r, q):
             if w == 'a' or w == 'e' or w == 'i' or w == 'o' or w == 'u':
                 moCnt += 1
         if moCnt >= 1 and (q - moCnt) >= 2:
-            z.sort()
+            # z.sort()
             res.append(z)
     elif n < r:
         return
@@ -31,8 +31,9 @@ l, c = map(int, input().split())
 myStr = list(map(str, input().split()))
 T = [0] * c
 # print(myStr)
+myStr.sort()
 res = []
-comb(6, 4, 4)
+comb(c, l, l)
 
 # print(res)
 res.sort()

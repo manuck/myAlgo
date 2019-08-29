@@ -58,6 +58,7 @@ def shuffle(a):
                 # print(z2)
                 # if z2 not in memo:
                     # memo.append(z2)
+                q.append([z2, ncnt+1])
                 for j in range((N//2)-1):
                     # print('j: ', j)
                     for k in range(j+1):

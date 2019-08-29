@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8a726d1-5af7-42bc-bbc2-92f7ca68f90d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../모의/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../모의/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../모의/Shuffle-O-Matic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../모의/Shuffle-O-Matic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../모의/Shuffle-O-Matic_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../모의/Shuffle-O-Matic_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2589_보물섬.py" beforeDir="false" afterPath="$PROJECT_DIR$/2589_보물섬.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,25 +37,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1396" />
+          <entry key="py" value="2102" />
           <entry key="txt" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="51" />
-          <entry key="Python" value="1396" />
+          <entry key="Python" value="2102" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../모의/Shuffle-O-Matic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+            <state relative-caret-position="209">
+              <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -107,11 +105,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2589_보물섬.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="-82">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <marker date="1567064950572" expanded="true" signature="88:737" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,14 +161,14 @@
         <option value="$PROJECT_DIR$/1697_input.txt" />
         <option value="$PROJECT_DIR$/1697_숨바꼭질.py" />
         <option value="$PROJECT_DIR$/2589_input.txt" />
-        <option value="$PROJECT_DIR$/2589_보물섬.py" />
         <option value="$PROJECT_DIR$/../모의/Shuffle-O-Matic.py" />
+        <option value="$PROJECT_DIR$/2589_보물섬.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="590" />
-    <option name="y" value="35" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-47" />
+    <option name="y" value="36" />
     <option name="width" value="1325" />
     <option name="height" value="1030" />
   </component>
@@ -211,7 +212,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Shuffle-O-Matic">
+  <component name="RunManager" selected="Python.2589_보물섬">
     <configuration name="121241241" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algo 보충" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -326,8 +327,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Shuffle-O-Matic" />
         <item itemvalue="Python.2589_보물섬" />
+        <item itemvalue="Python.Shuffle-O-Matic" />
         <item itemvalue="Python.1697_숨바꼭질" />
         <item itemvalue="Python.1759_암호 만들기" />
         <item itemvalue="Python.121241241" />
@@ -488,13 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2589_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2309_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -502,17 +496,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2589_보물섬.py">
+    <entry file="file://$PROJECT_DIR$/../모의/Shuffle-O-Matic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="209">
+          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../모의/Shuffle-O-Matic.py">
+    <entry file="file://$PROJECT_DIR$/2589_input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+        <state relative-caret-position="95">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2589_보물섬.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-82">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <marker date="1567064950572" expanded="true" signature="88:737" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,10 +1,11 @@
 import sys
+import collections
 sys.stdin = open('5427_input.txt')
 
 
 def bfs(x, y, z):
     global w, h
-    q = []
+    q = collections.deque([])
     dx = [0, 0, 1, -1]
     dy = [1, -1, 0, 0]
     if z == 0:
@@ -13,7 +14,7 @@ def bfs(x, y, z):
         q.append((y, x, 1))
         cnt = 1
         while q:
-            x, y, ncnt = q.pop(0)
+            x, y, ncnt = q.popleft()
             # print(x,y)
             for i in range(4):
                 nx = x + dx[i]
@@ -35,7 +36,7 @@ def bfs(x, y, z):
         q.append((x, y, 1))
         cnt = 1
         while q:
-            x, y, ncnt = q.pop(0)
+            x, y, ncnt = q.popleft()
             # print(x, y)
             for i in range(4):
                 nx = x + dx[i]
@@ -57,7 +58,7 @@ def bfs(x, y, z):
 
 t = int(input())
 
-for case in range(5):
+for case in range(t):
     # print('-------------case---------------------')
     w, h = map(int, input().split())
     g = []

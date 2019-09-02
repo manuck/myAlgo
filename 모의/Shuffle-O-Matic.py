@@ -1,19 +1,20 @@
 import sys,time
+import collections
 sys.stdin = open('Shuffle-O-Matic_input.txt')
 
 
 start = time.time()
 def shuffle(a):
     global N
-    q = [[a, 0]]
+    q = collections.deque([[a, 0]])
     cnt = 0
     res = 0
-    memo = [a]
+    # memo = [a]
     state = False
     while q:
         # print(q)
         # print(memo)
-        card, ncnt = q.pop(0)
+        card, ncnt = q.popleft()
         # print('--------------')
         # print(card)
         # print(ncnt)

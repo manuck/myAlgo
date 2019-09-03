@@ -80,3 +80,25 @@ liveC = []
 comb(len(C), M, M)
 
 print(sol)
+
+
+
+''' 진짜 좋은 생각
+from itertools import combinations as cb
+N,M = map(int,input().split())
+A = []
+B = []
+for j in range(N):
+	for i,k in enumerate(map(int,input().split())):
+		if k == 1: B.append((i,j))
+		if k == 2: A.append((i,j))
+ans = 10**9
+for C in cb(A,M):
+    D = [10**9]*len(B)
+    for i in range(len(B)):
+        x1,y1 = B[i]
+        for x2,y2 in C:
+            D[i] = min(D[i],abs(x1-x2)+abs(y1-y2))
+    ans = min(ans,sum(D))
+print(ans)
+'''

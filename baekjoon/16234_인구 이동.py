@@ -1,22 +1,22 @@
 import sys
 sys.stdin = open('16234_input.txt')
 
-
+import collections
 dx = [0, 0, 1, -1]
 dy = [1, -1, 0, 0]
 
-def bfs(v):
+def bfs(y, x):
     global N, R, L
-    q = []
-    point = [v]
+    q = collections.deque()
+    point = [[y, x]]
     level = 0
-    f = v[:]
-    visited[v[0]][v[1]] = 1
-    q.append(v)
+    f = [y, x]
+    visited[y][x] = 1
+    q.append([y, x])
 
     while q:
         level += 1
-        y, x = q.pop(0)
+        y, x = q.popleft()
         for i in range(4):
             ny = y + dy[i]
             nx = x + dx[i]
@@ -52,7 +52,7 @@ while True:
     for i in range(N):
         for j in range(N):
             if visited[i][j] == 0:
-                bfs([i, j])
+                bfs(i, j)
     if not pointAll:
         break
     else:

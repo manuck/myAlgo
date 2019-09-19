@@ -16,14 +16,14 @@ def bfs(v):
 
     while q:
         level += 1
-        v = q.pop(0)
+        y, x = q.pop(0)
         for i in range(4):
-            ny = v[0] + dy[i]
-            nx = v[1] + dx[i]
+            ny = y + dy[i]
+            nx = x + dx[i]
             if nx < 0 or nx >= N: continue
             if ny < 0 or ny >= N: continue
             if not visited[ny][nx]:
-                if L <= abs(g[v[0]][v[1]]-g[ny][nx]) <= R:
+                if L <= abs(g[y][x]-g[ny][nx]) <= R:
                     point.append([ny, nx])
                     q.append([ny, nx])
                     visited[ny][nx] = 1

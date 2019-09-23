@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/14889_스타트와 링크.py" line="9" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8a726d1-5af7-42bc-bbc2-92f7ca68f90d" name="Default Changelist" comment="" />
+    <list default="true" id="c8a726d1-5af7-42bc-bbc2-92f7ca68f90d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../CodeForces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeForces/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

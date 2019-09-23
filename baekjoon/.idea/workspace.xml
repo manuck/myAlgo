@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/14889_스타트와 링크.py" line="9" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8a726d1-5af7-42bc-bbc2-92f7ca68f90d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CodeForces/Prefixes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeForces/Prefixes.py" afterDir="false" />
-    </list>
+    <list default="true" id="c8a726d1-5af7-42bc-bbc2-92f7ca68f90d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="870" />
     <option name="y" value="11" />
     <option name="width" value="978" />
@@ -413,7 +411,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="696" y="9" width="782" height="871" extended-state="0" />
+    <frame x="696" y="9" width="782" height="871" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3637584" />

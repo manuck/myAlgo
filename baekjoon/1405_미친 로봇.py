@@ -19,7 +19,6 @@ def robot(step, y, x):
         return 0
     if step >= n:
         return 1
-
     ans = 0
     visited[y][x] = 1
     for i in range(4):
@@ -29,7 +28,6 @@ def robot(step, y, x):
 
     visited[y][x] = 0
     return ans
-
 
 a = list(map(int, input().split()))
 n = a.pop(0)

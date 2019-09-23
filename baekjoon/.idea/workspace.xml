@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/14889_스타트와 링크.py" line="9" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8a726d1-5af7-42bc-bbc2-92f7ca68f90d" name="Default Changelist" comment="" />
+    <list default="true" id="c8a726d1-5af7-42bc-bbc2-92f7ca68f90d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/1405_미친 로봇.py" beforeDir="false" afterPath="$PROJECT_DIR$/1405_미친 로봇.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,10 +100,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1405_미친 로봇.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="15" selection-start-line="15" selection-end-line="39" selection-end-column="10" />
+            <state relative-caret-position="399">
+              <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="11" />
               <folding>
-                <marker date="1569221426317" expanded="true" signature="392:668" ph="..." />
+                <marker date="1569221668313" expanded="true" signature="392:666" ph="..." />
               </folding>
             </state>
           </provider>
@@ -228,10 +230,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1088" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="957" />
+    <option name="y" value="20" />
+    <option name="width" value="978" />
+    <option name="height" value="1089" />
   </component>
   <component name="ProjectId" id="1PlVECfLV7BJDBX8sWAhmdmwIEg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -796,10 +799,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1405_미친 로봇.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="15" selection-start-line="15" selection-end-line="39" selection-end-column="10" />
+        <state relative-caret-position="399">
+          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="11" />
           <folding>
-            <marker date="1569221426317" expanded="true" signature="392:668" ph="..." />
+            <marker date="1569221668313" expanded="true" signature="392:666" ph="..." />
           </folding>
         </state>
       </provider>

@@ -27,41 +27,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="55" />
-          <entry key="txt" value="27" />
+          <entry key="py" value="56" />
+          <entry key="txt" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Python" value="55" />
+          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="Python" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="25487" />
+          <entry key="py" value="26045" />
           <entry key="txt" value="226" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="226" />
-          <entry key="Python" value="25487" />
+          <entry key="Python" value="26045" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2606_바이러스.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2798_블랙잭.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,14 +83,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10026_적록색약.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+            <state relative-caret-position="95">
+              <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
               <folding>
-                <marker date="1569217536048" expanded="true" signature="1607:1608" ph="..." />
+                <marker date="1569218159884" expanded="true" signature="1611:1612" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1405_미친 로봇.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="15" selection-start-line="15" selection-end-line="39" selection-end-column="10" />
+              <folding>
+                <marker date="1569221426317" expanded="true" signature="392:668" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1405_input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -140,15 +152,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2798_input.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -171,8 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/1759_input.txt" />
-        <option value="$PROJECT_DIR$/1759_암호 만들기.py" />
         <option value="$PROJECT_DIR$/1697_input.txt" />
         <option value="$PROJECT_DIR$/1697_숨바꼭질.py" />
         <option value="$PROJECT_DIR$/2589_input.txt" />
@@ -222,14 +223,15 @@
         <option value="$PROJECT_DIR$/3980_선발명단.py" />
         <option value="$PROJECT_DIR$/10026_input.txt" />
         <option value="$PROJECT_DIR$/10026_적록색약.py" />
+        <option value="$PROJECT_DIR$/1405_input.txt" />
+        <option value="$PROJECT_DIR$/1405_미친 로봇.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="957" />
-    <option name="y" value="20" />
-    <option name="width" value="978" />
-    <option name="height" value="1089" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectId" id="1PlVECfLV7BJDBX8sWAhmdmwIEg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -271,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.10026_적록색약">
+  <component name="RunManager" selected="Python.1405_미친 로봇">
     <configuration name="10026_적록색약" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algo 보충" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -293,7 +295,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2606_바이러스" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="1405_미친 로봇" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algo 보충" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -305,7 +307,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2606_바이러스.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1405_미친 로봇.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -378,19 +380,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.2606_바이러스" />
       <item itemvalue="Python.2798_블랙잭" />
       <item itemvalue="Python.6603_로또" />
       <item itemvalue="Python.3980_선발명단" />
       <item itemvalue="Python.10026_적록색약" />
+      <item itemvalue="Python.1405_미친 로봇" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.1405_미친 로봇" />
         <item itemvalue="Python.10026_적록색약" />
         <item itemvalue="Python.3980_선발명단" />
         <item itemvalue="Python.6603_로또" />
         <item itemvalue="Python.2798_블랙잭" />
-        <item itemvalue="Python.2606_바이러스" />
       </list>
     </recent_temporary>
   </component>
@@ -408,15 +410,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
+    <frame x="762" y="0" width="781" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17911434" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36424732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293011" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37903225" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3831522" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -452,14 +454,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/5427_불2.py" />
-    <entry file="file://$PROJECT_DIR$/../모의/Shuffle-O-Matic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2468_안전 영역.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -785,10 +779,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/10026_적록색약.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+        <state relative-caret-position="95">
+          <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
           <folding>
-            <marker date="1569217536048" expanded="true" signature="1607:1608" ph="..." />
+            <marker date="1569218159884" expanded="true" signature="1611:1612" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1405_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1405_미친 로봇.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="15" selection-start-line="15" selection-end-line="39" selection-end-column="10" />
+          <folding>
+            <marker date="1569221426317" expanded="true" signature="392:668" ph="..." />
           </folding>
         </state>
       </provider>

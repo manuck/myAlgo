@@ -3,10 +3,8 @@ sys.stdin = open('Prefixes_input.txt')
 
 n = int(input())
 a = list(input())
-# print(a)
-acnt = 0
-bcnt = 0
-ans = 0
+acnt, bcnt, ans = 0, 0, 0
+
 for i in range(len(a)):
     if acnt != bcnt and a[i] == a[i-1]:
         if acnt > bcnt:
@@ -22,9 +20,9 @@ for i in range(len(a)):
 
     else:
         if a[i] == 'a':
-            acnt+=1
+            acnt += 1
         else:
-            bcnt+=1
+            bcnt += 1
 
 print(ans)
 print(''.join(a))

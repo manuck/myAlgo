@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('Prefixes_input.txt')
+sys.stdin = open('A_Prefixes_input.txt')
 
 n = int(input())
 a = list(input())

@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('2048 Game_input.txt')
+sys.stdin = open('A_2048 Game_input.txt')
 
 t = int(input())
 

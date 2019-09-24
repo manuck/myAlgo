@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('Knights_input.txt')
+sys.stdin = open('B_Knights_input.txt')
 
 n = int(input())
 g = [['W' for _ in range(n)]for _ in range(n)]

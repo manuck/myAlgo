@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('Perfect Team_input.txt')
+sys.stdin = open('C_Perfect Team_input.txt')
 
 t = int(input())
 

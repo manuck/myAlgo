@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('Dawid and Bags of Candies_input.txt')
+sys.stdin = open('A_Dawid and Bags of Candies_input.txt')
 
 
 import itertools

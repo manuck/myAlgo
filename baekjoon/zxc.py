@@ -25,23 +25,12 @@ def check(x, y):
 
     return visit
 
-def bfs(x, y):
-    dx = [0, 0, -1, 1]
-    dy = [1, -1, 0, 0]
-    q = [[x, y]]
-    visit = [[0 for _ in range(len(landlist))]for _ in range(len(landlist))]
-    visit[y][x] = 1
-    while q:
-        x, y = q.pop()
-        for i in range(4):
-            nx = x + dx[i]
-            ny = y + dy[i]
-            if nx < 0 or nx >= len(landlist): continue
-            if ny < 0 or ny >= len(landlist): continue
-            if visit[ny][nx] == 0 and myarray[ny][nx] != 0:
-                visit[ny][nx] = 1
-                myarray[ny][nx] = 0
-                q.append([nx, ny])
+def dfs(v):
+    visitV[v] = 1
+    # print(v)
+    for w in range(len(landlist)):
+        if myarray[v][w] != 0 and visitV[w] == 0:
+            dfs(w)
 
 
 def vs(a, b, start):
@@ -179,7 +168,6 @@ def mst():
 
 
 
-
 n, m = map(int, input().split())
 g = []
 for i in range(n):
@@ -211,22 +199,22 @@ for i in range(len(myarray)):
         if myarray[i][j] != 0 and j > i:
             zxc.append([i, j, myarray[i][j]])
 
-print(zxc)
+# print(zxc)
 V, E = len(myarray)-1, len(myarray)
 D = [99999] * (V + 1)
 visited = [0] * (V + 1)
-print(V, E)
-print(len(zxc))
+visitV = [0] * (V + 1)
+# print(V, E)
+# print(len(zxc))
 sol = mst()
 outsider = 0
-for i in range(len(myarray)):
-    for j in range(len(myarray)):
-        if j>i:
-            if myarray[i][j] != 0:
-                bfs(j, i)
-                outsider += 1
-print(outsider)
-if sol == 0 or outsider > 1:
+for i in range(1, len(visitV)):
+    if visitV[i] == 0:
+        outsider += 1
+        dfs(i)
+# print(len(landlist))
+# print('연결', outsider)
+if sol == 0 or outsider != 1 or len(zxc) < (len(landlist)-1):
     print(-1)
 else:
     print(sol)

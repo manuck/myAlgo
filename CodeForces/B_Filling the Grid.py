@@ -14,15 +14,49 @@ for i in range(h):
         for j in range(r[i]):
             g[i][j] = 1
 
+# for i in range(h):
+#     print(g[i])
+# print()
+
 for i in range(w):
     if c[i] != 0:
         # print(r[i])
         for j in range(c[i]):
             g[j][i] = 1
+rchange = []
+for i in range(h):
+    change = 0
+    for j in range(w):
+        if g[i][j] == 1:
+            change += 1
+        else:
+            rchange.append(change)
+            break
+        if j == w-1:
+            rchange.append(change)
 
+cchange = []
+for i in range(w):
+    change = 0
+    for j in range(h):
+        if g[j][i] == 1:
+            change += 1
+        else:
+            cchange.append(change)
+            break
+        if j == h-1:
+            cchange.append(change)
+
+
+ignore = 0
+if r == rchange and c == cchange:
+    ignore = 1
 # for i in range(h):
 #     print(g[i])
-
+# print()
+# print(rchange)
+# print(cchange)
+# print(ignore)
 ans = 0
 for i in range(h):
     for j in range(w):
@@ -51,7 +85,7 @@ for i in range(h):
 # for i in range(h):
 #     print(g[i])
 # print(ans)
-if ans == 0:
+if ignore == 0:
     print(0)
 else:
     print((2**ans)%1000000007)

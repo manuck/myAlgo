@@ -9,6 +9,7 @@ def bfs(area, n):
 
     total = 0
     while q:
+        print(v)
         i = q.pop(0)
         total += a[i]
         for j in area:
@@ -39,7 +40,7 @@ for i in range(n//2):
     r += 1
 
     for j in range(len(c)):
-
+        print()
         cnt1 = 0
         cnt2 = 0
         section1 = 0

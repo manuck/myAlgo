@@ -57,6 +57,7 @@ while True:
         break
     else:
         for points in pointAll:
+            print(points)
             res = sum(map(lambda x: g[x[0]][x[1]], points)) // len(points)
             for q in points:
                 g[q[0]][q[1]] = res

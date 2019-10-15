@@ -4,9 +4,9 @@ sys.stdin = open("15684_input.txt")
 
 def dfs(r, cnt):
     global ans
-    for i in range(h + 2):
-        print(g[i])
-    print()
+    # for i in range(h + 2):
+    #     print(g[i])
+    # print()
     if cnt == min_cnt:
         if check():
             ans = cnt

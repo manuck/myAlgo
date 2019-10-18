@@ -8,6 +8,7 @@ def dijkstra(K, V, graph):
     s = [False] * V
     # d는 memoization을 위한 array이다. d[i]는 정점 K에서 i까지 가는 최소한의 거리가 저장되어 있다.
     d = [INF] * V
+    print(d)
     d[K - 1] = 0
 
     while True:
@@ -47,6 +48,6 @@ graph = [[INF]*V for _ in range(V)]
 for _ in range(E):
     u, v, w = map(int, input().split())
     graph[u-1][v-1] = w
-
+print(graph)
 for d in dijkstra(K, V, graph):
     print(d if d != INF else "INF")

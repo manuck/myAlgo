@@ -10,9 +10,16 @@ def DIJKSTRA_PRIORITYQ(s):
     D[s] = 0
     Q = PriorityQueue()
     Q.put((0, s))
-
+    print(visit)
+    print(P)
+    print(D)
+    print()
     while not Q.empty():
         d, u = Q.get()
+        print(Q)
+        print(d, u)
+        print('p', P)
+        print()
         if d > D[u]: continue
 
         visit[u] = True
@@ -32,5 +39,8 @@ for i in range(E):
     u, v, w = map(int, input().split())
     G[u].append((v, w))
     G[v].append((u, w))
+
+print(G)
+print(G[1])
 
 DIJKSTRA_PRIORITYQ(1)

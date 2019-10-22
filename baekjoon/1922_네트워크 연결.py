@@ -1,7 +1,10 @@
 import sys
 sys.stdin = open('1922_input.txt')
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a7c87541b338e06a48eed1f7596c944b92cd96c7
 def find(x):
     if x != b[x]:
         b[x] = find(b[x])
@@ -26,6 +29,7 @@ m = int(input())
 
 a = []
 b = list(range(n+1))
+<<<<<<< HEAD
 for i in range(m):
     a.append(list(map(int, input().split())))
 ans = 0
@@ -34,5 +38,15 @@ cnt = 0
 a.sort(key=lambda x: x[2])
 # print(a)
 # print(b)
+=======
+ans = 0
+cnt = 0
+
+for i in range(m):
+    a.append(list(map(int, input().split())))
+
+a.sort(key=lambda x: x[2])
+
+>>>>>>> a7c87541b338e06a48eed1f7596c944b92cd96c7
 mst()
 print(ans)

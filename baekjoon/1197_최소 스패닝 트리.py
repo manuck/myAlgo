@@ -13,7 +13,7 @@ def mst():
         one = find(a1)
         two = find(a2)
         if one != two:
-            b[one] = two
+            b[two] = one
             ans += a3
             cnt += 1
         if cnt == v-1:
@@ -31,6 +31,6 @@ for _ in range(e):
 
 # print(a)
 a.sort(key=lambda x: x[2])
-print(a)
+# print(a)
 mst()
 print(ans)

@@ -13,7 +13,10 @@ def mst():
         one = find(a1)
         two = find(a2)
         if one != two:
-            b[two] = one
+            if one > two:
+                b[two] = one
+            else:
+                b[one] = two
             ans += a3
             cnt += 1
         if cnt == v-1:

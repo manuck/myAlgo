@@ -36,17 +36,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zxc.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="19">
+              <caret line="162" column="24" selection-start-line="162" selection-start-column="24" selection-end-line="162" selection-end-column="24" />
+=======
             <state relative-caret-position="247">
               <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+>>>>>>> db9aa001e76bb714c6a2d8a9ed23e87a3676aea7
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/17471_게리맨더링.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+=======
         <entry file="file://$PROJECT_DIR$/1922_네트워크 연결.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
+<<<<<<< HEAD
               <caret line="20" selection-start-line="20" selection-end-line="20" />
+=======
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+>>>>>>> db9aa001e76bb714c6a2d8a9ed23e87a3676aea7
+>>>>>>> c69b18b99d630e6e3a2a2302898bfe17cb6fce04
             </state>
           </provider>
         </entry>
@@ -182,9 +198,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="683" />
+    <option name="width" value="683" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectId" id="1PlVECfLV7BJDBX8sWAhmdmwIEg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -323,10 +339,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.6603_로또" />
-      <item itemvalue="Python.3980_선발명단" />
       <item itemvalue="Python.10026_적록색약" />
       <item itemvalue="Python.1405_미친 로봇" />
+      <item itemvalue="Python.3980_선발명단" />
+      <item itemvalue="Python.6603_로또" />
       <item itemvalue="Python.zxc" />
     </list>
     <recent_temporary>
@@ -353,9 +369,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="683" y="0" width="683" height="728" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22008547" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21860465" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -734,10 +750,36 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/1922_네트워크 연결.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
+=======
+    <entry file="file://$PROJECT_DIR$/zxc.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="19">
+          <caret line="162" column="24" selection-start-line="162" selection-start-column="24" selection-end-line="162" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17471_게리맨더링.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+=======
+        <state relative-caret-position="247">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1922_네트워크 연결.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+>>>>>>> db9aa001e76bb714c6a2d8a9ed23e87a3676aea7
+>>>>>>> c69b18b99d630e6e3a2a2302898bfe17cb6fce04
         </state>
       </provider>
     </entry>

@@ -2,6 +2,7 @@ import sys
 sys.stdin = open('a_input.txt')
 
 input = sys.stdin.readline
+
 def find(num):
     if p[num] != num:
         p[num] = find(p[num])

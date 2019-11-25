@@ -1,14 +1,14 @@
 import sys
 sys.stdin = open('2814_input.txt')
 
-def dfs(l, v):
+def dfs(len, v):
     global sol
     visited[v] = 1
-    if sol < l:
-        sol = l
+    if sol < len:
+        sol = len
     for w in range(1, n+1):
         if g[v][w] == 1 and visited[w] == 0:
-            dfs(l + 1, w)
+            dfs(len + 1, w)
     visited[v] = 0
 t = int(input())
 

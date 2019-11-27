@@ -24,5 +24,7 @@ for i in range(1, len(s)//2+1):
         ret += len(str(cnt))
     ret += len(before)
     ans = min(ans, ret)
-
+    
+if ans == 99999999999:
+        ans = 1
 print(ans)

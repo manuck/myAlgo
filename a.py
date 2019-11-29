@@ -1,34 +1,16 @@
 import sys
 sys.stdin = open('a_input.txt')
 
-input = sys.stdin.readline
+s = str(input())
+print(s)
+answer = True
+print(len(s))
+if len(s) != 4 and len(s) != 6:
+    answer = False
 
-def find(num):
-    if p[num] != num:
-        p[num] = find(p[num])
-    return p[num]
+for i in range(len(s)):
+    print(s[i].isdigit())
+    if not s[i].isdigit():
+        answer = False
 
-
-def union(a, b):
-    A = find(a)
-    B = find(b)
-    if A != B:
-        p[B] = A
-
-
-n, m = map(int, input().split())
-p = [i for i in range(n + 1)]
-
-for _ in range(m):
-    state, a, b = map(int, input().split())
-
-    if state:
-        if find(a) == find(b):
-            print("YES")
-
-        else:
-            print("NO")
-
-    else:
-        union(a, b)
-
+print(answer)

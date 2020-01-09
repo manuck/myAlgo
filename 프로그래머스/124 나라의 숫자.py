@@ -1,7 +1,6 @@
 import sys
 sys.stdin = open('124 나라의 숫자_input.txt')
 
-
 '''
 문제 설명
 

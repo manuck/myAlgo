@@ -23,6 +23,17 @@ for case in range(t):
     number = input()
     k = int(input())
     answer = ''
-    number = list(number)
-    print(number)
+    a = []
+    for i in range(len(number)):
+        while len(a) > 0 and a[-1] < number[i] and k > 0:
+            a.pop()
+            k -= 1
+        if k == 0:
+            a += list(number[i:])
+            break
+        a.append(number[i])
+    if k > 0:
+        a = a[:-k]
+    answer = ''.join(a)
 
+    print(answer)

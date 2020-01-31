@@ -23,4 +23,22 @@ t = int(input())
 for case in range(t):
     people = list(map(int, input().split()))
     limit = int(input())
-    
+    answer = 0
+
+    people.sort()
+    start = 0
+    end = len(people) - 1
+    print(people)
+    while True:
+        if start > end:
+            break
+
+        if people[start] + people[end] <= limit:
+            start += 1
+            end -= 1
+            answer += 1
+        else:
+            end -= 1
+            answer += 1
+
+    print(answer)

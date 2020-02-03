@@ -36,31 +36,13 @@ for i in range(len(progresses)):
     a.append(math.ceil(n))
 print(a)
 index = 0
-while True:
-    for i in range(len(a)):
-        a[i] -= a[index]
-    cnt = 0
-    for i in range(len(a)):
-        if a[i] > 0:
-            index = i
-            break
-        else:
-            cnt += 1
-    answer.append(cnt)
-    print(answer)
-# while a:
-#     print()
-#     print(a)
-#     k = a.pop(0)
-#     m = 1
-#     for i in range(len(a)):
-#         a[i] -= k
-#         if a[i] <= 0:
-#             m += 1
-#         else:
-#             for j in range(m-1):
-#                 a.pop(0)
-#             break
-#     answer.append(m)
+
+for i in range(len(a)):
+    if a[index] < a[i]:
+        answer.append(i-index)
+        index = i
+answer.append(len(a)-index)
+
+
 
 print(answer)

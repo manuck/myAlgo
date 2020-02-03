@@ -21,9 +21,46 @@ sys.stdin = open('기능개발_input.txt')
 예를 들어 진도율이 95%인 작업의 개발 속도가 하루에 4%라면 배포는 2일 뒤에 이루어집니다.
 '''
 
+import math
+
 progresses = list(map(int, input().split()))
 speeds = list(map(int, input().split()))
 answer = []
 
 print(progresses)
 print(speeds)
+
+a = []
+for i in range(len(progresses)):
+    n = (100-progresses[i])/speeds[i]
+    a.append(math.ceil(n))
+print(a)
+index = 0
+while True:
+    for i in range(len(a)):
+        a[i] -= a[index]
+    cnt = 0
+    for i in range(len(a)):
+        if a[i] > 0:
+            index = i
+            break
+        else:
+            cnt += 1
+    answer.append(cnt)
+    print(answer)
+# while a:
+#     print()
+#     print(a)
+#     k = a.pop(0)
+#     m = 1
+#     for i in range(len(a)):
+#         a[i] -= k
+#         if a[i] <= 0:
+#             m += 1
+#         else:
+#             for j in range(m-1):
+#                 a.pop(0)
+#             break
+#     answer.append(m)
+
+print(answer)

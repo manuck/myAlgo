@@ -12,10 +12,23 @@ return 하도록 solution 함수를 완성해주세요.
 nums에 들어있는 숫자의 개수는 3개 이상 50개 이하입니다.
 nums의 각 원소는 1 이상 1,000 이하의 자연수이며, 중복된 숫자가 들어있지 않습니다.
 '''
-
+from itertools import combinations
 t = int(input())
 
 for case in range(t):
     nums = list(map(int, input().split()))
     answer = 0
-    
+    print(nums)
+    a = list(combinations(nums, 3))
+    print(a)
+    for i in range(len(a)):
+        state = True
+        for j in range(2, sum(a[i])):
+            if sum(a[i]) % j == 0:
+                state = False
+                break
+        if state == True:
+            answer += 1
+
+    print(answer)
+

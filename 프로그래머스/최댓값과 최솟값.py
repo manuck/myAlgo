@@ -17,3 +17,16 @@ t = int(input())
 for case in range(t):
     s = input()
     answer = ''
+    a = list(map(str, s.split()))
+    # print(a)
+    max = -9999999
+    min = 99999999
+    for i in a:
+        # print(int(i))
+        if max < int(i):
+            max = int(i)
+        if min > int(i):
+            min = int(i)
+
+    answer += str(min) + ' ' + str(max)
+    print(answer)

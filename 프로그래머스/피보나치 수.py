@@ -25,3 +25,10 @@ t = int(input())
 for case in range(t):
     n = int(input())
     answer = 0
+    print(n)
+    a = [0, 1]
+    for i in range(1, n):
+        a.append(a[i] + a[i-1])
+    print(a)
+    answer = a[n] % 1234567
+    print(answer)

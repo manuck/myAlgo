@@ -24,5 +24,12 @@ t = int(input())
 for case in range(t):
     brown, red = map(int, input().split())
     answer = []
-
     print(brown, red)
+    for i in range(1, int(red ** 0.5) + 1):
+        if not red % i:
+            j = red // i
+        if 2 * i + 2 * j + 4 == brown:
+            answer = [j + 2, i + 2]
+            break
+
+    print(answer)

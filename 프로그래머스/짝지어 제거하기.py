@@ -15,9 +15,39 @@ b aa baa → bb aa → aa →
 문자열의 길이 : 1,000,000이하의 자연수
 문자열은 모두 소문자로 이루어져 있습니다.
 '''
+import collections
 
 t = int(input())
 
 for case in range(t):
     s = input()
-    print(s)
+    # answer = 0
+    # print(s)
+    # s = collections.deque(list(s))
+    # result = []
+    # while s:
+    #     if not result:
+    #         result.append(s.popleft())
+    #
+    #     elif result[-1] == s[0]:
+    #         result.pop()
+    #         s.popleft()
+    #     else:
+    #         result.append(s.popleft())
+    #
+    # if result:
+    #     answer = 0
+    # else:
+    #     answer = 1
+    # print(answer)
+    answer = []
+    for i in s:
+        print(answer)
+        if not (answer):
+            answer.append(i)
+        else:
+            if (answer[-1] == i):
+                answer.pop()
+            else:
+                answer.append(i)
+    print(answer)

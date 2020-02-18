@@ -41,3 +41,20 @@ for case in range(t):
     n = int(input())
     words = list(map(str, input().split()))
     print(words)
+    answer = []
+    save = [words[0]]
+    for i in range(1, len(words)):
+        if words[i] in save:
+            answer.append(i % n+1)
+            answer.append(i // n+1)
+            break
+        if words[i][0] != save[-1][-1]:
+            answer.append(i % n+1)
+            answer.append(i//n+1)
+            break
+        else:
+            save.append(words[i])
+    if not answer:
+        answer = [0, 0]
+    print(answer)
+

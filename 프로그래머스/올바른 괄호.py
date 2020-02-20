@@ -18,6 +18,18 @@ t = int(input())
 for case in range(t):
     s = input()
     answer = True
-
+    print(s)
+    cnt = 0
+    for i in s:
+        if i == '(':
+            cnt += 1
+        else:
+            cnt -= 1
+        if cnt < 0:
+            answer = False
+            break
+    print(cnt)
+    if cnt != 0:
+        answer = False
 
     print(answer)

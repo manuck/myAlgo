@@ -28,6 +28,11 @@ for i in range(3):
     land.append(list(map(int, input().split())))
 print(land)
 answer = 0
-
-
+for i in range(len(land) - 1):
+    land[i + 1][0] = max(land[i][1], land[i][2], land[i][3]) + land[i + 1][0]
+    land[i + 1][1] = max(land[i][0], land[i][2], land[i][3]) + land[i + 1][1]
+    land[i + 1][2] = max(land[i][0], land[i][1], land[i][3]) + land[i + 1][2]
+    land[i + 1][3] = max(land[i][0], land[i][1], land[i][2]) + land[i + 1][3]
+print(land)
+answer = max(land[-1])
 print(answer)

@@ -21,3 +21,15 @@ n개의 음이 아닌 정수가 있습니다. 이 수를 적절히 더하거나 
 numbers = list(map(int, input().split()))
 target = int(input())
 answer = 0
+print(numbers)
+answer_list = [0]
+for i in numbers:
+    temp = []
+    for j in answer_list:
+        print(temp)
+        temp.append(j+i)
+        temp.append(j-i)
+    answer_list = temp
+answer = answer_list.count(target)
+
+print(answer)

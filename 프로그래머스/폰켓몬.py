@@ -26,6 +26,21 @@ t = int(input())
 for case in range(t):
     nums = list(map(int, input().split()))
     answer = 0
+    # n = len(nums)//2
+    # monster = [0] * 200000
+    # count = 0
+    # for i in range(len(nums)):
+    #     monster[nums[i] - 1] = 1
+    # print(monster[:10])
+    # for j in range(200000):
+    #     if monster[j] == 1:
+    #         count += 1
+    # if count >= n:
+    #     answer = n
+    # else:
+    #     answer = count
+
+    answer = min(len(nums) // 2, len(set(nums)))
 
 
     print(answer)

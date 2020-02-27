@@ -12,3 +12,16 @@ s는 알파벳과 공백문자(" ")로 이루어져 있습니다.
 '''
 
 t = int(input())
+for case in range(t):
+    s = input()
+    s = s.lower()
+    answer = ''
+    s = s.split(" ")
+    print(s)
+    for i in s:
+        i = i.capitalize()
+        answer += i
+        answer += ' '
+
+    answer = answer[:-1]
+    print(answer)

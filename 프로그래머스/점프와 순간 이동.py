@@ -32,6 +32,8 @@ for case in range(t):
     ans = 0
     # print(n)
     while n != 0:
+        # n, b = divmod(n, 2)
+        # ans += b
         if n % 2 == 0:
             n = n//2
         else:

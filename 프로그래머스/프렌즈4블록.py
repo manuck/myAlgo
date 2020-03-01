@@ -43,8 +43,66 @@ t = int(input())
 for case in range(t):
     m, n = map(int, input().split())
     board = []
+    answer = 0
     for i in range(m):
         board.append(input())
-    print(board)
-    answer = 0
+    board = [[a for a in row] for row in board]
+    for i in range(m):
+        print(board[i])
+    print()
+    state = True
+    while state:
+        com = [[0 for i in range(n)] for j in range(m)]
+        state_cnt = 0
+        for i in range(m-1):
+            for j in range(n-1):
+                cnt = 1
+                state_cnt += 1
+                block = ''
+                if board[i][j].isalpha():
+                    block = board[i][j]
+                if board[i][j+1] == block:
+                    cnt += 1
+                if board[i+1][j] == block:
+                    cnt += 1
+                if board[i+1][j+1] == block:
+                    cnt += 1
+                if i == m-2 and j == n-2 and state_cnt==(m-1)*(n-1):
+                    state = False
+                if cnt == 4:
+                    state_cnt = 0
+                    com[i][j] = 1
+                    com[i][j+1] = 1
+                    com[i+1][j] = 1
+                    com[i+1][j+1] = 1
+        for i in range(m):
+            print(com[i])
+        print()
+        for i in range(m):
+            for j in range(n):
+                if com[i][j] == 1:
+                    board[i][j] = ' '
+
+        for i in range(n):
+            tmp = []
+            space = 0
+            for j in range(m):
+                if board[j][i] != ' ':
+                    tmp.append(board[j][i])
+                else:
+                    space += 1
+            for j in range(space):
+                tmp.insert(0, ' ')
+            for j in range(m):
+                board[j][i] = tmp[j]
+
+    for i in range(m):
+        print(board[i])
+    print()
+    for i in range(m):
+        for j in range(n):
+            if board[i][j] == ' ':
+                answer += 1
+
+    print(answer)
 

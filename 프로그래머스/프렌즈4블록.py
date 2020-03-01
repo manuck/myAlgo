@@ -54,7 +54,7 @@ for case in range(t):
     while state:
         com = [[0 for i in range(n)] for j in range(m)]
         state_cnt = 0
-        for i in range(m-1):
+        for i in range(m-1):        #1. 2*2 블록 제거 찾기
             for j in range(n-1):
                 cnt = 1
                 state_cnt += 1
@@ -67,7 +67,7 @@ for case in range(t):
                     cnt += 1
                 if board[i+1][j+1] == block:
                     cnt += 1
-                if i == m-2 and j == n-2 and state_cnt==(m-1)*(n-1):
+                if i == m-2 and j == n-2 and state_cnt == (m-1)*(n-1):
                     state = False
                 if cnt == 4:
                     state_cnt = 0
@@ -78,12 +78,13 @@ for case in range(t):
         for i in range(m):
             print(com[i])
         print()
-        for i in range(m):
+        for i in range(m):      #2. 블록제거 및 answer에 더하기
             for j in range(n):
                 if com[i][j] == 1:
                     board[i][j] = ' '
+                    answer += 1
 
-        for i in range(n):
+        for i in range(n):      #3. 블록 아래로 내리기
             tmp = []
             space = 0
             for j in range(m):
@@ -99,10 +100,7 @@ for case in range(t):
     for i in range(m):
         print(board[i])
     print()
-    for i in range(m):
-        for j in range(n):
-            if board[i][j] == ' ':
-                answer += 1
+
 
     print(answer)
 

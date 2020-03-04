@@ -39,6 +39,7 @@ files는 1000 개 이하의 파일명을 포함하는 문자열 배열이다.
 출력 형식
 위 기준에 따라 정렬된 배열을 출력한다.
 '''
+import re
 
 t = int(input())
 for case in range(t):
@@ -47,4 +48,9 @@ for case in range(t):
     for i in range(n):
         files.append(input())
     print(files)
-    
+    answer = []
+    a = [re.split(r"([0-9]+)", s) for s in files]
+    print(a)
+    b = sorted(a, key=lambda x: (x[0].lower(), int(x[1])))
+    answer = ["".join(s) for s in b]
+    print(answer)

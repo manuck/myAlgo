@@ -26,6 +26,25 @@ t = int(input())
 for case in range(t):
     cacheSize = int(input())
     cities = list(map(str, input().split()))
+    answer = 0
     cache = []
     cities = [city.lower() for city in cities]
     print(cities)
+    if cacheSize == 0:
+        answer += len(cities) * 5
+    else:
+        for city in cities:
+            if city in cache:
+                cache.pop(cache.index(city))
+                cache.append(city)
+                answer += 1
+            else:
+                if len(cache) < cacheSize:
+                    cache.append(city)
+                    answer += 5
+                else:
+                    cache.pop(0)
+                    cache.append(city)
+                    answer += 5
+    print(answer)
+

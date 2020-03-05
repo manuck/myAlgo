@@ -27,4 +27,9 @@ a = int(input())
 b = int(input())
 answer = 0
 
+while a != b:
+    a = (a + 1) // 2  # 다음 라운드에 진출 했을 때 가지게 될 번호 수
+    b = (b + 1) // 2
+    answer += 1
+
 print(answer)

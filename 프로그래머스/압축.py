@@ -68,6 +68,7 @@ for case in range(t):
         idx = index
     index = 1
     letter = msg[0]
+
     while index < len(msg):
         if letter + msg[index] not in LZW:
             answer.append(LZW[letter])

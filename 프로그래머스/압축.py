@@ -62,4 +62,23 @@ t = int(input())
 for case in range(t):
     answer = []
     msg = input()
-    
+    LZW = dict()
+    for index, value in enumerate("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 1):
+        LZW[value] = index
+        idx = index
+    index = 1
+    letter = msg[0]
+    while index < len(msg):
+        if letter + msg[index] not in LZW:
+            answer.append(LZW[letter])
+            idx += 1
+            LZW[letter + msg[index]] = idx
+            letter = msg[index]
+            index += 1
+            continue
+
+        letter += msg[index]
+        index += 1
+    answer.append(LZW[letter])
+    print(answer)
+

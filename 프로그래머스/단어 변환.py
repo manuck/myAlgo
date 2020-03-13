@@ -23,6 +23,31 @@ t = int(input())
 for case in range(t):
     begin = input()
     target = input()
-    words = list(map(input().split()))
+    words = list(map(str, input().split()))
     answer = 0
-    
+    state = 1
+    if target not in words:
+        state = 0
+    q = [begin]
+    while words and state:
+        for key in q:
+            tmp = []
+            for word in words:
+                cnt = 0
+                for i in range(len(word)):
+                    if key[i] != word[i]:
+                        cnt += 1
+                    if cnt > 1:
+                        break
+
+                if cnt == 1:
+                    tmp.append(word)
+                    words.remove(word)
+        answer += 1
+
+        if target in tmp:
+            break
+        else:
+            q = tmp
+
+    print(answer)

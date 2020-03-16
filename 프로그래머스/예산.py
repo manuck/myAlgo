@@ -19,5 +19,24 @@ sys.stdin = open('예산_input.txt')
 
 budgets = list(map(int, input().split()))
 M = int(input())
-
 answer = 0
+print(budgets)
+print(M)
+start = 0
+end = max(budgets)
+while end >= start:
+    mid = (start + end)//2
+    res = 0
+    for i in budgets:
+        if mid > i:
+            res += i
+        else:
+            res += mid
+    if res > M:
+        end = mid - 1
+    else:
+        if res >= answer:
+            answer = mid
+        start = mid + 1
+
+print(answer)

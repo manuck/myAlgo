@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('가장 킨 팰린드롬_input.txt')
+sys.stdin = open('가장 긴 팰린드롬_input.txt')
 
 '''
 문제 설명

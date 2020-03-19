@@ -17,10 +17,34 @@ costs의 길이는 ((n-1) * n) / 2이하입니다.
 모든 섬 사이의 다리 건설 비용이 주어지지 않습니다. 이 경우, 두 섬 사이의 건설이 불가능한 것으로 봅니다.
 연결할 수 없는 섬은 주어지지 않습니다.
 '''
+def find(x):
+    if x != b[x]:
+        b[x] = find(b[x])
+    return b[x]
+
+def mst():
+    global answer, cnt
+    for a1, a2, a3 in costs:
+        one = find(a1)
+        two = find(a2)
+        if one != two:
+            b[one] = two
+            answer += a3
+            cnt += 1
+        if cnt == n-1:
+            break
+
 
 n = int(input())
 costs = []
-for i in range(n):
+for i in range(5):
     costs.append(list(map(int, input().split())))
 
 print(costs)
+b = list(range(n+1))
+answer = 0
+cnt = 0
+costs.sort(key=lambda x: x[2])
+mst()
+print(answer)
+

@@ -33,3 +33,9 @@ t = int(input())
 for case in range(t):
     n = int(input())
     answer = 0
+    a = [1, 1]
+    for i in range(2, 80):
+        a.append(a[i-1] + a[i-2])
+    print(len(a))
+    answer = a[n-1]*2 + 2*(a[n-1] + a[n-2])
+    print(answer)

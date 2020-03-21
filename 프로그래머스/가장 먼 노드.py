@@ -20,3 +20,33 @@ for i in range(7):
 
 print(edge)
 answer = 0
+a = [0] * (n+1)
+g = [[] for i in range(len(edge)+1)]
+
+for i in range(len(edge)):
+    if not edge[i][1] in g[edge[i][0]]:
+        g[edge[i][0]].append(edge[i][1])
+        # g[edge[i][0]].sort()
+    if not edge[i][1] in g[edge[i][1]]:
+        g[edge[i][1]].append(edge[i][0])
+        # g[edge[i][1]].sort()
+print(g)
+a[0] = -1
+a[1] = -1
+queue = [1]
+cnt = 1
+print(a)
+print(all(a))
+while not all(a):
+    tmp = []
+    for i in queue:
+        for j in g[i]:
+            if a[j] == 0:
+                a[j] += cnt
+                tmp.append(j)
+    queue = tmp
+    cnt += 1
+answer = a.count(max(a))
+print(a)
+print(answer)
+

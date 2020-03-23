@@ -26,7 +26,15 @@ for case in range(t):
     s = int(input())
     answer = []
 
+    a = list(divmod(s, n))
+    answer = [a[0]] * n
+    for i in range(a[1]):
+        answer[i] += 1
+    answer = sorted(answer)
+    if n > s:
+        answer = [-1]
 
 
-
+    print('답')
     print(answer)
+    print()

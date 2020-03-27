@@ -13,13 +13,35 @@ sys.stdin = open('1157_input.txt')
 '''
 
 t = int(input())
-for case in range(t):
+for case in range(1):
     s = input()
-    s.lower()
+    answer = ''
+    s = s.lower()
+    print(s)
     q = [0]*26
+    index = 0
+    n = 0
     for i in s:
-        ord(i)- 97
-        if q not in i:
-            q.append([i,0])
-        else:
+        q[ord(i)-97] += 1
+        if n < q[ord(i)-97]:
+            n = q[ord(i)-97]
+            index = ord(i)-97
+    print(q)
+    print(index)
+    m = max(q)
+    cnt = 0
+    for i in range(len(q)):
+        if m == q[i]:
+            cnt += 1
+        if cnt > 1:
+            answer = '?'
+
+    if not answer == '?':
+        answer = chr(index+97)
+        answer = answer.upper()
+    print(answer)
+    # q.sort()
+    # print(q)
+    # if
+
 

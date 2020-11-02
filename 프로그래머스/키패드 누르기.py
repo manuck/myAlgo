@@ -16,3 +16,53 @@ sys.stdin = open('키패드 누르기_input.txt')
 
 '''
 
+t = int(input())
+
+for case in range(t):
+    numbers = list(map(int, input().split()))
+    hand = input()
+    answer = ''
+    print(numbers)
+    print(hand)
+    position = [[1, 3], [0, 0], [1, 0], [2, 0], [0, 1], [1, 1], [2, 1], [0, 2], [1, 2], [2, 2]]
+    left = [0, 3]
+    right = [2, 3]
+    for i in range(len(numbers)):
+        x = position[numbers[i]][0]
+        y = position[numbers[i]][1]
+        if numbers[i] == 1 or numbers[i] == 4 or numbers[i] == 7:
+            left = [x, y]
+            answer += 'L'
+            # print(left, right, position[numbers[i]])
+            # print(x, y)
+            # print('L')
+        elif numbers[i] == 3 or numbers[i] == 6 or numbers[i] == 9:
+            right = [x, y]
+            answer += 'R'
+            # print(left, right, position[numbers[i]])
+            # print(x, y)
+            # print('R')
+        else:
+            distance_l = abs(x-left[0]) + abs(y-left[1])
+            distance_r = abs(x-right[0]) + abs(y-right[1])
+            # print(left, right, position[numbers[i]])
+            # print(x, y)
+            if distance_l > distance_r:
+                right = [x, y]
+                answer += 'R'
+                # print('R')
+            elif distance_l < distance_r:
+                left = [x, y]
+                answer += 'L'
+                # print('L')
+            else:
+                if hand == 'left':
+                    left = [x, y]
+                    answer += 'L'
+                    # print('L')
+                else:
+                    right = [x, y]
+                    answer += 'R'
+                    # print('R')
+    print(answer)
+

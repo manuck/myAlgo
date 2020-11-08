@@ -22,33 +22,44 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
 
 def solution(name):
     answer = 0
+    # 순방향 인덱스 a, 역방향 인덱스 b
     a = 1
     b = len(name) - 1
+    # 0인덱스위치 answer 더하기
     answer += min(ord(name[0])-ord('A'), ord('Z')-ord(name[0])+1)
+    # 순방향 합 a_sum, 역방향 합 b_sum
     a_sum = 0
     b_sum = 0
+    # 'A' 카운터 cnt
     cnt = 0
+    # 마지막 연속된 'A'의 숫자 카운트
     a_cnt = 0
     b_cnt = 0
+    # 전부 'A'면 리턴 0
     for i in range(len(name)):
         if name[i] == 'A':
             cnt += 1
         if cnt == len(name):
             return 0
+    # name 한자리면 바로 리턴
     if len(name) == 1:
         return answer
+    # 순방향, 역방향 각자 더하기
     for i in range(len(name)-1):
         a_sum += min(ord(name[a]) - ord('A'), ord('Z') - ord(name[a]) + 1)
         b_sum += min(ord(name[b]) - ord('A'), ord('Z') - ord(name[b]) + 1)
+        # 역방향 연속된 'A' 카운트는 a_cnt로, 순방향은 b_cnt로 반대로 줌
         if name[a] == 'A' and name[a-1] == 'A':
             b_cnt += 1
         if name[b] == 'A' and name[b-1] == 'A':
             a_cnt += 1
         a += 1
         b -= 1
+        # 옆으로 이동시 answer + 1
         answer += 1
     a -= 1
     b += 1
+    # 합에서 연속된 cnt 빼기
     if name[a] == 'A':
         # a_sum -= 1
         a_cnt += 1

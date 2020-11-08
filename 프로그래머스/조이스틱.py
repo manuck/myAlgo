@@ -19,3 +19,49 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
 따라서 11번 이동시켜 "JAZ"를 만들 수 있고, 이때가 최소 이동입니다.
 만들고자 하는 이름 name이 매개변수로 주어질 때, 이름에 대해 조이스틱 조작 횟수의 최솟값을 return 하도록 solution 함수를 만드세요.
 '''
+
+def solution(name):
+    answer = 0
+    a = 1
+    b = len(name) - 1
+    answer += min(ord(name[0])-ord('A'), ord('Z')-ord(name[0])+1)
+    a_sum = 0
+    b_sum = 0
+    cnt = 0
+    a_cnt = 0
+    b_cnt = 0
+    for i in range(len(name)):
+        if name[i] == 'A':
+            cnt += 1
+        if cnt == len(name):
+            return 0
+    if len(name) == 1:
+        return answer
+    for i in range(len(name)-1):
+        a_sum += min(ord(name[a]) - ord('A'), ord('Z') - ord(name[a]) + 1)
+        b_sum += min(ord(name[b]) - ord('A'), ord('Z') - ord(name[b]) + 1)
+        if name[a] == 'A' and name[a-1] == 'A':
+            b_cnt += 1
+        if name[b] == 'A' and name[b-1] == 'A':
+            a_cnt += 1
+        a += 1
+        b -= 1
+        answer += 1
+    a -= 1
+    b += 1
+    if name[a] == 'A':
+        # a_sum -= 1
+        a_cnt += 1
+    if name[b] == 'A':
+        # b_sum -= 1
+        b_cnt += 1
+    a_sum -= a_cnt
+    b_sum -= b_cnt
+    answer += min(a_sum, b_sum)
+    return answer
+
+
+t = int(input())
+for case in range(t):
+    name = input()
+    print(solution(name))

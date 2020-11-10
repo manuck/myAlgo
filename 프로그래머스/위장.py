@@ -13,7 +13,20 @@
 
 '''
 def solution(clothes):
-    answer = 0
+    res = {}
+    answer = 1
+    print(clothes)
+    for c in clothes:
+        print(c)
+        if c[1] in res:
+            res[c[1]] += 1
+        else:
+            res[c[1]] = 1
+        print(res)
+
+    for i in res.values():
+        answer *= (i + 1)
+    answer -= 1
     return answer
 
 clothes = [[['yellow_hat', 'headgear'], ['blue_sunglasses', 'eyewear'], ['green_turban', 'headgear']],
@@ -21,4 +34,4 @@ clothes = [[['yellow_hat', 'headgear'], ['blue_sunglasses', 'eyewear'], ['green_
 
 for case in range(2):
     a = clothes[case]
-    solution(a)
+    print(solution(a))

@@ -18,9 +18,25 @@ arr = [
 
 
 def solution(arr):
-    answer = []
-    print('asd')
+    answer = [0, 0]
+    l = len(arr)
+    def quad(x, y, n):
+        start = arr[y][x]
+        for i in range(y, y + n):
+            for j in range(x, x + n):
+                if arr[i][j] != start:  #  다르면 압축불가
+                    next = n // 2
+                    quad(x, y, next)
+                    quad(x, y + next, next)
+                    quad(x + next, y, next)
+                    quad(x + next, y + next, next)
+                    return
+        # 압축가능
+        answer[start] += 1
+    quad(0, 0, l)
+    print(answer)
     return answer
+
 
 for case in range(2):
     solution(arr[case])

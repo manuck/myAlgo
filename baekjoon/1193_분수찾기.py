@@ -20,7 +20,7 @@ for i in range(1, 1000000):
     if cnt >= n:
         index = i
         break
-        
+
 s = list(range(1, index+1))
 if index % 2 == 1:
     answer += str(s[cnt-n]) + '/' + str(s[-(cnt-n+1)])
